@@ -1,0 +1,25 @@
+ SYSTEM =  easyvasp
+
+INCAR-basic
+   PREC   = Accurate
+   ENCUT  = 520 eV
+   NELMIN= 5
+   LREAL = Auto
+   ALGO = Normal
+   EDIFF  = 1E-5
+   ISPIN = 1
+   SIGMA = 0.2
+   NPAR = 4     ## important to reduce calculate time, equal sqrt(cpu cores)
+
+ Bader Charge
+   NELM = 150
+   ICHARG = 2
+   NSW    = 0
+   IBRION = -1
+   LCHARG = T
+   LAECHG = T
+   LWAVE  =  F
+
+# Attenion: better modify    PREC   = Accurate
+# Use 'chgsum.pl AECCAR0 AECCAR2 to get CHARGCAR_sum '
+# Use './bader CHGCAR -ref CHGCAR_sum' to get the results

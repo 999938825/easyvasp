@@ -1,0 +1,19 @@
+ SYSTEM =  easyvasp
+
+INCAR-basic
+   PREC   = Accurate
+   ENCUT  = 520 eV
+   NELMIN= 5
+   LREAL = Auto
+   ALGO = Normal
+   EDIFF  = 1E-5
+   ISPIN = 1
+   SIGMA = 0.2
+   NPAR = 4     ## important to reduce calculate time, equal sqrt(cpu cores)
+ vaccum potential
+   NELM = 100
+   NSW    = 0
+   IBRION = -1
+   LCHARG = .FALSE.
+   LWAVE  =  F
+   LVHAR = T

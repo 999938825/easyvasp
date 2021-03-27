@@ -1,0 +1,25 @@
+ SYSTEM =  easyvasp
+
+INCAR-basic
+   PREC   = Normal
+   ENCUT  = 520 eV
+   NELMIN= 5
+   LREAL = Auto
+   ALGO = Normal
+   EDIFF  = 1E-5
+   ISPIN = 1
+   SIGMA = 0.2
+   NPAR = 4     ## important to reduce calculate time, equal sqrt(cpu cores)
+
+ Frequency
+   ICHARG = 2
+   NSW    = 1
+   NFREE = 2
+   POTIM = 0.02
+   IBRION = 5
+   LCHARG = F
+   LWAVE  =  F
+   IVDW = 11
+
+# Frequenies was included in OUTCAR, eg. 1 f/i = 64.112970 THz
+# f/i is imaginary frequency

@@ -1,0 +1,25 @@
+system = easyvasp
+
+PREC = Normal
+ENCUT = 520
+NPAR = 4
+LPLANE=.TRUE.
+NSIM=4
+NELMIN = 5
+EDIFF = 1E-5
+EDIFFG = -0.5
+LREAL = Auto
+NSW = 400
+IBRION=3
+POTIM = 0.0
+ICHAIN=0
+IMAGES = 4
+SPRING = -5
+LCLIMB=.TRUE.
+IOPT=7  #global lbfgs method
+LGLOBAL=.TRUE.
+MAXMOVE=0.5 # max step
+INVCURV=0.01 # initial curvature
+ISMEAR =0
+VOSKOWN =1
+IVDW = 11
